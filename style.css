@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 body{
-    background-color: blanchedalmond;
+    background-image: url(Imagens/PraiaDeNoite.jpg);
+    background-size: cover;
+    background-position: center;
+    /*background-color: blanchedalmond;*/
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font: size 20px;
 }
@@ -15,5 +18,6 @@ h2{
 }
 
 p{
+    color: gray;
     text-align: justify;
 }
