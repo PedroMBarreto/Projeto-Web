@@ -8,7 +8,6 @@
     text-align: center;
 }
 
-
 #Cor1{
     background-color: rgb(86, 176, 240);
     border: 1px solid black;
@@ -77,10 +76,18 @@
 }
 
 #paleta{
-    display: inline-block;
-    height: auto;
-    width: 100%;
+    
+    height: 40%;
+    width: 40%;
+    margin: auto;
 }
+
+table{
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 2%;
+}
+
 @font-face{
     font-family: 'Roboto';
     src: url(fontes/Roboto/Roboto-Thin.ttf)
