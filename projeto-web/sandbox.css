@@ -1,6 +1,6 @@
-@charset "UTC-8";
+@charset "UTF-8";
 
-#title{
+#title {
     background-color: skyblue;
     padding: 10px;
     font-family: 'Roboto';
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-#Cor1{
+#Cor1, #Cor2, #Cor3, #Cor4 {
     background-color: rgb(86, 176, 240);
     border: 1px solid black;
     display: inline-block;
@@ -21,53 +21,26 @@
     font-weight: bold;
 }
 
-#Cor2{
+#Cor2 {
     background-color: rgb(86, 127, 240);
-    border: 1px solid black;
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    margin: 0.3%;
-    text-align: center;
-    line-height: 200px;
-    font-family: 'Roboto';
-    font-weight: bold;
 }
 
-#Cor3{
+#Cor3 {
     background-color: rgb(145, 86, 240);
-    border: 1px solid black;
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    margin: 0.3%;
-    text-align: center;
-    line-height: 200px;
-    font-family: 'Roboto';
-    font-weight: bold;
 }
 
-#Cor4{
+#Cor4 {
     background-color: rgb(86, 224, 240);
-    border: 1px solid black;
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    margin: 0.3%;
-    text-align: center;
-    line-height: 200px;
-    font-family: 'Roboto';
-    font-weight: bold;
 }
 
-.video{
+.video {
     position: relative;
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 58%;
 }
 
-.video iframe{
+.video iframe {
     position: absolute;
     top: 0%;
     left: 20%;
@@ -75,23 +48,84 @@
     height: 60%;
 }
 
-#paleta{
-    
+#paleta {
     height: 40%;
     width: 40%;
     margin: auto;
 }
 
-table{
+table {
     border: 1px solid black;
     margin: 10px auto;
     padding: 2%;
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url(fontes/Roboto/Roboto-Thin.ttf)
-    format('truetype');
+    src: url(fontes/Roboto/Roboto-Thin.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #title {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    #paleta {
+        width: 80%;
+    }
+
+    #Cor1, #Cor2, #Cor3, #Cor4 {
+        height: 150px;
+        width: 150px;
+        line-height: 150px;
+    }
+
+    .video iframe {
+        width: 80%;
+        left: 10%;
+        height: auto;
+    }
+
+    table {
+        width: 90%;
+        padding: 1%;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    #paleta {
+        width: 100%;
+    }
+
+    #Cor1, #Cor2, #Cor3, #Cor4 {
+        height: 100px;
+        width: 100%;
+        line-height: 100px;
+        margin: 5px 0;
+    }
+
+    .video iframe {
+        width: 100%;
+        left: 0;
+        height: auto;
+    }
+
+    table {
+        font-size: 12px;
+        padding: 0;
+        width: 100%;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
 }
