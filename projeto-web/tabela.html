@@ -5,27 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Funcionários</title>
     <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url(fontes/Roboto/Roboto-Thin.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Roboto';
+        }
+
         table {
             margin: auto;
             width: 50%;
             border-collapse: collapse;
         }
+
         table, th, td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: center;
         }
+
         th {
             background-color: #f2f2f2;
         }
+
         img {
             width: 20px;
             height: 20px;
             cursor: pointer;
         }
 
-        h2{
+        h2 {
             text-align: center;
+            font-size: 24px;
         }
 
         .botao-link {
@@ -41,9 +56,50 @@
             cursor: pointer;
         }
 
-        div{
+        div {
             text-align: center;
             margin-top: 2%;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            table {
+                width: 80%; /* Reduz a largura da tabela */
+            }
+
+            th, td {
+                font-size: 14px; /* Reduz o tamanho da fonte */
+                padding: 6px; /* Diminui o padding */
+            }
+
+            h2 {
+                font-size: 20px; /* Reduz o tamanho do título */
+            }
+
+            .botao-link {
+                padding: 10px 20px; /* Ajusta o tamanho do botão */
+                font-size: 14px; /* Reduz o tamanho da fonte do botão */
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                width: 100%; /* A tabela ocupa toda a largura da tela */
+            }
+
+            th, td {
+                font-size: 12px; /* Reduz ainda mais a fonte */
+                padding: 4px; /* Padding menor */
+            }
+
+            h2 {
+                font-size: 18px; /* Título mais compacto */
+            }
+
+            .botao-link {
+                font-size: 12px; /* Fonte menor no botão */
+                padding: 8px 16px; /* Botão menor */
+            }
         }
     </style>
 </head>
@@ -103,7 +159,7 @@
 </table>
 
 <div>
-    <a href="formulario.html" class="botao-link">Ir para outra página</a>
+    <a href="formulario.html" class="botao-link">Adicionar Funcionário</a>
 </div>
 
 </body>

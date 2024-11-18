@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Secretaria</title>
 </head>
 <body>
-    <h1>Menu</h1>
+    <header>
+        <h1>SOE</h1>
+        <p>(Sistema de Organização Escolar)</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Tela de login</h2>
+            <form action="tabela.html" method="post" autocomplete="on">
+                <p>
+                    <label for="iemail"></label> 
+                    <input type="text" name="email" id="iemail" required minlength="5" maxlength="15" size="12" placeholder="Email/Usuario" autocomplete="username">
+                </p>
+                <p>
+                    <label for="isenha"></label> 
+                    <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" size="12" placeholder="Senha">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+                <p><a href="formulario.html">Cadastrar</a></p>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
